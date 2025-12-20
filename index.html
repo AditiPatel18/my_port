@@ -525,6 +525,10 @@
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 350px;
         }
 
         .project-card::before {
@@ -564,6 +568,7 @@
             color: var(--text-muted);
             margin-bottom: 1rem;
             font-size: 0.9rem;
+            flex-grow: 1;
         }
 
         .project-link {
@@ -575,6 +580,7 @@
             font-weight: 600;
             transition: gap 0.3s;
             font-size: 0.95rem;
+            margin-top: auto;
         }
 
         .project-link:hover {
@@ -866,6 +872,10 @@
             .code-window {
                 display: none;
             }
+
+            .project-card {
+                min-height: 320px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -908,6 +918,10 @@
 
             .skill-card h3 {
                 font-size: 0.85rem;
+            }
+
+            .project-card {
+                min-height: 300px;
             }
         }
     </style>
@@ -1111,16 +1125,14 @@
                         <div class="project-icon">💧</div>
                         <h3>Urban H2 Navigator</h3>
                         <p>An innovative urban water management solution that helps users locate hydrogen refueling stations and drinking water sources. Features an interactive map interface with location-based services, detailed facility information, and route planning capabilities for sustainable urban navigation.</p>
-                        <a href="https://github.com/AditiPatel18/urban-h2-navigator" target="_blank" class="project-link">View Project
-                            →</a>
+                        <a href="https://github.com/AditiPatel18/urban-h2-navigator" target="_blank" class="project-link">View Project →</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-icon">🌳</div>
                         <h3>DSA Visualizer</h3>
                         <p>An interactive educational tool that brings Data Structures and Algorithms to life through dynamic visualizations. Features step-by-step animations of sorting algorithms, tree traversals, graph algorithms, and more. Helps students understand complex DSA concepts through intuitive visual representations with real-time code execution.</p>
-                        <a href="https://github.com/AditiPatel18/DSA-Visulizer" target="_blank" class="project-link">View
-                            Project →</a>
+                        <a href="https://github.com/AditiPatel18/DSA-Visulizer" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
