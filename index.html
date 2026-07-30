@@ -461,6 +461,21 @@
             margin-top: 0.8rem;
         }
 
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .stats-grid .stat-box {
+            margin-top: 0;
+        }
+
+        .stat-box.full-width {
+            grid-column: 1 / -1;
+        }
+
         .stat-label {
             color: var(--text-muted);
             font-size: 0.85rem;
@@ -1065,20 +1080,30 @@
                         <p><strong>Bachelor of Technology - Information Technology</strong></p>
                         <p>Dharmsinh Desai University</p>
                         <p>Nadiad, Kheda</p>
-                        <p style="margin-top: 1rem; color: var(--text);">Currently in 4th Semester, maintaining strong
+                        <p style="margin-top: 1rem; color: var(--text);">Currently in 5th Semester, maintaining strong
                             academic performance with hands-on project experience.</p>
 
-                        <div class="stat-box">
-                            <div class="stat-label">1st Semester CGPA</div>
-                            <div class="stat-value">9.33</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">2nd Semester CGPA</div>
-                            <div class="stat-value">9.32</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">3rd Semester CGPA</div>
-                            <div class="stat-value">9.05</div>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <div class="stat-label">1st Semester SPI</div>
+                                <div class="stat-value">9.33</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">2nd Semester SPI</div>
+                                <div class="stat-value">9.31</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">3rd Semester SPI</div>
+                                <div class="stat-value">9.05</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">4th Semester SPI</div>
+                                <div class="stat-value">8.89</div>
+                            </div>
+                            <div class="stat-box full-width">
+                                <div class="stat-label">Overall CPI</div>
+                                <div class="stat-value">8.96</div>
+                            </div>
                         </div>
 
                         <p style="margin-top: 1.5rem;"><strong>12th Grade - Science Stream</strong></p>
@@ -1155,26 +1180,24 @@
                 <p class="section-subtitle">Some of my recent work</p>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-icon">🎯</div>
-                        <h3>Career Guidance AI</h3>
-                        <p>An intelligent AI-powered platform that helps students and professionals make informed career
-                            decisions. Analyzes skills, interests, and market trends to provide personalized career
-                            recommendations and learning paths.</p>
-                        <a href="https://github.com/AditiPatel18/Project" target="_blank" class="project-link">View Project →</a>
+                        <div class="project-icon">💳</div>
+                        <h3>PayFlow – Digital Wallet & Banking System</h3>
+                        <p>A secure digital wallet & banking platform built with Java, JSP, Servlets, JDBC, and MySQL. Features MVC architecture, peer-to-peer transfers, interactive analytics dashboard, real-time balance updates, PBKDF2 hashing, and Apache Tomcat deployment.</p>
+                        <a href="https://github.com/AditiPatel18/PayFlow" target="_blank" class="project-link">View Project →</a>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-icon">💧</div>
-                        <h3>Urban H2 Navigator</h3>
-                        <p>An innovative urban water management solution that helps users locate hydrogen refueling stations and drinking water sources. Features an interactive map interface with location-based services, detailed facility information, and route planning capabilities for sustainable urban navigation.</p>
-                        <a href="https://github.com/AditiPatel18/urban-h2-navigator" target="_blank" class="project-link">View Project →</a>
+                        <div class="project-icon">🧠</div>
+                        <h3>DSA Master – Interactive Learning Platform</h3>
+                        <p>An interactive DSA learning platform built using HTML, CSS, JavaScript, Supabase, and PostgreSQL. Features algorithm visualizations, dry runs, complexity analysis, implementations in C, C++, & Java, Supabase auth, progress tracking, and personalized dashboards.</p>
+                        <a href="https://github.com/AditiPatel18/DSA-Visualizer" target="_blank" class="project-link">View Project →</a>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-icon">🌳</div>
-                        <h3>DSA Visualizer</h3>
-                        <p>An interactive educational tool that brings Data Structures and Algorithms to life through dynamic visualizations. Features step-by-step animations of sorting algorithms, tree traversals, graph algorithms, and more. Helps students understand complex DSA concepts through intuitive visual representations with real-time code execution.</p>
-                        <a href="https://github.com/AditiPatel18/DSA-Visulizer" target="_blank" class="project-link">View Project →</a>
+                        <div class="project-icon">🎮</div>
+                        <h3>2D Treasure Hunting Game</h3>
+                        <p>A 2D tile-based adventure game developed in Java, Java Swing, and Maven. Features sprite animations, camera scrolling, robust game loop, collision detection, interactive objects, sound effects, and clean modular OOP design.</p>
+                        <a href="https://github.com/AditiPatel18/MyGame" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
